@@ -1,0 +1,48 @@
+List<Variable> Vars = new ArrayList<>()
+Variable-> position in grid, domain, value
+
+way1: update variableLists
+way2: keep a boolean track of unassigned variables
+
+//if assignment is complete => base condition
+
+
+Variable Order Heuristic:
+Vah1, vah2, vah3, vah4, vah5
+
+public Variable getVar(variableList, heuristic)
+
+least constraint value: jei value ta baki unassigned
+variables er moddhe kom shonkhok variable er vitor ase
+
+//base condition
+
+
+v = getVariable(varList, heuristic)
+
+for(List l : v.domain)
+{
+if consistent
+way1: varList.remove(v)
+way2: flag[v] = false;
+board[i][j] = value;
+
+result = backtrack()
+if(result)
+{
+	return result;
+}else
+{
+	varList.add(v)
+	board[i][j] = 0;
+}
+}
+
+return failure;
+
+
+
+keep a HashMap
+key: variable
+value: domain er value, jake remove krsi
+FC:
